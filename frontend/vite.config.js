@@ -12,7 +12,7 @@ export default defineConfig({
       "/api": {
         target: process.env.VITE_BACKEND_URL,
         changeOrigin: true,
-        secure: false,
+        secure: process.env.VITE_NODE_ENV === "production",
       },
     },
   },
