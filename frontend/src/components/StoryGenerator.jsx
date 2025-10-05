@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import ThemeInput from "./ThemeInput"
 import LoadingStatus from "./LoadingStatus"
 
-const API_BASE_URL = "/api"
+const API_BASE_URL = `${import.meta.env.VITE_BACKEND_URL}/api`
 export default function StoryGenerator() {
   const navigate = useNavigate()
   const [theme, setTheme] = useState("")

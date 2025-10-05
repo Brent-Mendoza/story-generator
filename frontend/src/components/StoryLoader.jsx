@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import LoadingStatus from "./LoadingStatus"
 import StoryGame from "./StoryGame"
 
-const API_BASE_URL = "/api"
+const API_BASE_URL = `${import.meta.env.VITE_BACKEND_URL}/api`
 
 export default function StoryLoader() {
   const { id } = useParams()
